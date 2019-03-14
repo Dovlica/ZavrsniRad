@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rubik');
+    #forma{
+        float: left;
+    }
+    form{
+        margin-left: 2%;
+        margin-right: 65%;
+        font: bolder;
+        font-family: 'Rubik', sans-serif;
+    }
+    span{
+        display: inline-block;
+        width: 150px;
+    }
+    fieldset{
+        border-radius: 5px;
+        background-color: rgb(245, 190, 218);
+    }
+    legend{
+        margin-left: 15%;
+        background-color: rgb(216, 228, 225);
+        border-radius: 2px;
+    }
+    input{
+        border-radius: 5px;
+        height: 2em;
+    }
+    textarea{
+        border-radius: 5px;
+    }
+    select{
+        border-radius: 5px;
+        height: 2em;
+    }
+    #pv{
+        height: 60px;;
+    }
+    .ch{
+        margin-left: 20px;
+    }
+    #prikaz{
+        margin-left: 40%;
+        padding-top: 3%;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(128, 109, 109);
+        padding-left: 2em;
+    }
+    #email{
+        width: 16em;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="forma">
+        <form action="">
+            <fieldset>
+                <legend>Form Validation</legend>
+                <p><span>Ime:</span><input id="ime" type="text" required></p>
+                <p><span>Prezime:</span><input id="prezime" type="text" required></p>
+                <p><span>Datum rodjenja:</span><input id="datum" type="date"></p>
+                <p><span>JMBG:</span><input id="jmbg" type="text"></p>
+                <p><span>Lozinka:</span><input id="pass" type="password"></p>
+                <p><span>Potvrdi lozinku:</span><input id="ppass" type="password"></p>
+                <p><span>Pol:</span>
+                    <input type="radio" name="r1" value="Musko">Muski
+                    <input type="radio" name="r1" value="Zensko">Zenski
+                    <input type="radio" name="r1" value="Drugo">Drugi
+                </p>
+                <p><span>Obrazovanje:</span><select name="obrazovanje" id="obr">
+                        <option value=""></option>
+                        <option value="Srednje">Srednje obrazovanje</option>
+                        <option value="Vise">Vise obrazovanje</option>
+                        <option value="Visoko">Visoko obrazovanje</option>
+                        <option value="Master">Master</option>
+                    </select></p>
+                <p><span>Programske vestine:</span>
+                    <input id="js" type="checkbox">JS
+                    <input id="php" type="checkbox">PHP
+                    <input id="py" type="checkbox">Python
+                </p>
+                <p><span>Kontakt:</span><input id="kon" type="text"></p>
+                <p><span>Email:</span><input id="email" type="mail"></p>
+                <p><textarea name="" id="text" cols="50" rows="6" placeholder="Napisite nesto o sebi:"></textarea></p>
+                <button id="bt1">Promeni</button>
+                <a href="forma2.html">Zavrsi</a>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<script src="code4.js"></script>
+</html>

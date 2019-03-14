@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rubik');
+
+        a{
+        text-decoration: none;
+        color: rgb(128, 109, 109);
+        margin-top: 1em;
+        font-family: 'Rubik', sans-serif;
+        }
+        #prikazi{
+            margin-left: 5%;
+        }
+        #oj{
+            margin-left: 20%;
+        }
+        #novi{
+            margin-left: 20%;
+
+        }
+        fieldset{
+            height: 700px;
+        }
+        legend{
+            margin-left: 5%;
+            font-family: 'Rubik', sans-serif;
+        }
+        .prik{
+            display: inline-block;
+            width: 20%;
+        }
+        .prik1{
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 12%;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Glavni prikaz</legend>
+        <div>
+            <button id="prikazi">Prikazi kandidate</button>
+            <input id="oj" type="text" placeholder="Ime kandidata">
+            <button id="odabir">Odaberi</button>
+            <a href="forma1.html">
+                    <button id="novi">Upisi novog kandidata</button>
+            </a>
+        </div>
+        <div class="prik">
+                <a id="a1" class="link" href="forma3.html"></a>
+        </div>
+        <div class="prik1">
+                <a id="a2" class="link" href="forma3.html"></a>
+        </div>
+
+    </fieldset>
+</body>
+<script src="code2.js"></script>
+</html>
